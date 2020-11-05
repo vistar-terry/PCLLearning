@@ -62,13 +62,6 @@ void txtViewer(char * txtfile)
         cloud->points[i].z = m_vTxtPoints[i].z;
     }
 
-    //PCL Visualizer
-    // pcl::visualization::PCLVisualizer viewer("Cloud Viewer");
-    // viewer.addPointCloud(cloud);
-    // viewer.setBackgroundColor(255, 255, 255);
-    // viewer.spin();
-
-
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("3D Viewer"));
 
     // 设置背景颜色
@@ -85,7 +78,6 @@ void txtViewer(char * txtfile)
     while (!viewer->wasStopped())
     {
         viewer->spinOnce(100);
-        // boost::this_thread::sleep(boost::posix_time::microseconds(100000));
     }
     // return 0;
 

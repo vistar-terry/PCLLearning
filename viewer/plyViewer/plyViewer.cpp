@@ -34,7 +34,6 @@ int viewer1(char *path)
     while (!viewer->wasStopped())
     {
         viewer->spinOnce(100);
-        // boost::this_thread::sleep(boost::posix_time::microseconds(1000));
     }
 
     return 0;
@@ -53,19 +52,6 @@ int viewer2(char *path)
         return -1;
     }
 
-    // 计算法线
-    // pcl::NormalEstimation<pcl::PointXYZRGB, pcl::Normal> n;
-    // //建立kdtree来进行近邻点集搜索
-    // pcl::search::KdTree<pcl::PointXYZRGB>::Ptr tree(new pcl::search::KdTree<pcl::PointXYZRGB>);
-    // //为kdtree添加点运数据
-    // tree->setInputCloud(cloud);
-    // n.setInputCloud(cloud);
-    // n.setSearchMethod(tree);
-    // //点云法向计算时，需要所搜的近邻点大小
-    // n.setKSearch(20);
-    // //开始进行法向计算
-    // n.compute(*normals);
-
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("3D Viewer"));
 
     // 自定义颜色
@@ -81,7 +67,6 @@ int viewer2(char *path)
     while (!viewer->wasStopped())
     {
         viewer->spinOnce(100);
-        // boost::this_thread::sleep(boost::posix_time::microseconds(1000));
     }
 
     return 0;
