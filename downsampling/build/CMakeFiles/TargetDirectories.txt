@@ -1,3 +1,0 @@
-/home/thz/Desktop/tomato_weight/PCLLearning/downsampling/build/CMakeFiles/rebuild_cache.dir
-/home/thz/Desktop/tomato_weight/PCLLearning/downsampling/build/CMakeFiles/downsampling.dir
-/home/thz/Desktop/tomato_weight/PCLLearning/downsampling/build/CMakeFiles/edit_cache.dir

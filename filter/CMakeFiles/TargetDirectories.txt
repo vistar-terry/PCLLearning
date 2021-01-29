@@ -1,3 +1,0 @@
-/home/vistar/Desktop/PCLLearning/filter/CMakeFiles/rebuild_cache.dir
-/home/vistar/Desktop/PCLLearning/filter/CMakeFiles/direct_filter.dir
-/home/vistar/Desktop/PCLLearning/filter/CMakeFiles/edit_cache.dir
