@@ -23,7 +23,8 @@ int main(int argc, char** argv)
     filter.setInputCloud(cloud);
 
     // 设置体素栅格的大小为 1x1x1cm
-    filter.setLeafSize(0.01f, 0.01f, 0.01f);
+    // 数字越小,去掉的点越少
+    filter.setLeafSize(0.003f, 0.003f, 0.003f);
     filter.filter(*filteredCloud);
 
 
@@ -34,6 +35,8 @@ int main(int argc, char** argv)
     viewer->addPointCloud<pcl::PointXYZ>(filteredCloud, single_color, "sample cloud");
 
     viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 2, "sample cloud");
+
+    pcl::io::savePCDFileASCII("rel.pcd", *filteredCloud);
 
     while (!viewer->wasStopped())
     {

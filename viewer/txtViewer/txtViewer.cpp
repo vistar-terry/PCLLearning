@@ -73,7 +73,7 @@ void txtViewer(char * txtfile)
     viewer->addPointCloud<pcl::PointXYZ>(cloud, single_color, "3D Viewer");
     
     // 设置点云大小
-    viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 1, "3D Viewer");
+    viewer->setPointCloudRenderingProperties(pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 2, "3D Viewer");
 
     while (!viewer->wasStopped())
     {

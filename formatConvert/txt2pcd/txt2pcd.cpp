@@ -88,7 +88,7 @@ int txt2pcd(char **path, string pcdfile)
 
     // system("pause");
 }
-
+  
 // txt2pcd txt_path pcd_path
 int main(int argc, char **argv)
 {
